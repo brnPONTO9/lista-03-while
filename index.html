@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lista 03 — Estruturas de Repetição (while) — 15 exercícios</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Lista 03 — Estruturas de Repetição (while)</h1>
+    <p class="lead">15 exercícios com laços <code>while</code>. Mesmo padrão visual das listas anteriores.</p>
+  </header>
+
+  <main class="grid">
+    <!-- 1 -->
+    <section class="card">
+      <h2>1) Números de 1 a 10 (while)</h2>
+      <button onclick="e1()">Executar</button>
+      <div id="o1" class="out"></div>
+    </section>
+
+    <!-- 2 -->
+    <section class="card">
+      <h2>2) Soma de 1 a 100 (while)</h2>
+      <button onclick="e2()">Executar</button>
+      <div id="o2" class="out"></div>
+    </section>
+
+    <!-- 3 -->
+    <section class="card">
+      <h2>3) Pares de 1 a 50 (while)</h2>
+      <button onclick="e3()">Executar</button>
+      <div id="o3" class="out"></div>
+    </section>
+
+    <!-- 4 -->
+    <section class="card">
+      <h2>4) Média de 5 inteiros (while)</h2>
+      <div class="row">
+        <div><label>N1</label><input id="e4a" type="number" step="1"></div>
+        <div><label>N2</label><input id="e4b" type="number" step="1"></div>
+        <div><label>N3</label><input id="e4c" type="number" step="1"></div>
+      </div>
+      <div class="row">
+        <div><label>N4</label><input id="e4d" type="number" step="1"></div>
+        <div><label>N5</label><input id="e4e" type="number" step="1"></div>
+      </div>
+      <button onclick="e4()">Calcular</button>
+      <div id="o4" class="out"></div>
+    </section>
+
+    <!-- 5 -->
+    <section class="card">
+      <h2>5) Tabuada até 10 (while)</h2>
+      <label>Número</label>
+      <input id="e5n" type="number" step="1">
+      <button onclick="e5()">Gerar</button>
+      <div id="o5" class="out"></div>
+    </section>
+
+    <!-- 6 -->
+    <section class="card">
+      <h2>6) Divisores do número (while)</h2>
+      <label>Inteiro positivo</label>
+      <input id="e6n" type="number" step="1" min="1">
+      <button onclick="e6()">Listar</button>
+      <div id="o6" class="out"></div>
+    </section>
+
+    <!-- 7 -->
+    <section class="card">
+      <h2>7) Número primo? (while)</h2>
+      <label>Inteiro ≥ 2</label>
+      <input id="e7n" type="number" step="1" min="2">
+      <button onclick="e7()">Verificar</button>
+      <div id="o7" class="out"></div>
+    </section>
+
+    <!-- 8 -->
+    <section class="card">
+      <h2>8) Fibonacci até N (while)</h2>
+      <label>Número limite (≥0)</label>
+      <input id="e8n" type="number" step="1" min="0">
+      <button onclick="e8()">Gerar</button>
+      <div id="o8" class="out"></div>
+    </section>
+
+    <!-- 9 -->
+    <section class="card">
+      <h2>9) Média de idades (5 pessoas) (while)</h2>
+      <div class="row">
+        <div><label>Nome 1</label><input id="e9n1" type="text"></div>
+        <div><label>Idade 1</label><input id="e9i1" type="number" step="1"></div>
+      </div>
+      <div class="row">
+        <div><label>Nome 2</label><input id="e9n2" type="text"></div>
+        <div><label>Idade 2</label><input id="e9i2" type="number" step="1"></div>
+      </div>
+      <div class="row">
+        <div><label>Nome 3</label><input id="e9n3" type="text"></div>
+        <div><label>Idade 3</label><input id="e9i3" type="number" step="1"></div>
+      </div>
+      <div class="row">
+        <div><label>Nome 4</label><input id="e9n4" type="text"></div>
+        <div><label>Idade 4</label><input id="e9i4" type="number" step="1"></div>
+      </div>
+      <div class="row">
+        <div><label>Nome 5</label><input id="e9n5" type="text"></div>
+        <div><label>Idade 5</label><input id="e9i5" type="number" step="1"></div>
+      </div>
+      <button onclick="e9()">Calcular</button>
+      <div id="o9" class="out"></div>
+    </section>
+
+    <!-- 10 -->
+    <section class="card">
+      <h2>10) Primeiros 20 Fibonacci (while)</h2>
+      <button onclick="e10()">Executar</button>
+      <div id="o10" class="out"></div>
+    </section>
+
+    <!-- 11 -->
+    <section class="card">
+      <h2>11) Soma dos pares de 1 a N (while)</h2>
+      <label>N</label>
+      <input id="e11n" type="number" step="1" min="1">
+      <button onclick="e11()">Somar</button>
+      <div id="o11" class="out"></div>
+    </section>
+
+    <!-- 12 -->
+    <section class="card">
+      <h2>12) Ímpares de 1 a 50 (while)</h2>
+      <button onclick="e12()">Executar</button>
+      <div id="o12" class="out"></div>
+    </section>
+
+    <!-- 13 -->
+    <section class="card">
+      <h2>13) Dígitos separados (while)</h2>
+      <label>Inteiro</label>
+      <input id="e13n" type="number" step="1">
+      <button onclick="e13()">Exibir</button>
+      <div id="o13" class="out"></div>
+      <div class="hint">Exibe sinal e dígitos em ordem natural.</div>
+    </section>
+
+    <!-- 14 -->
+    <section class="card">
+      <h2>14) Fatorial (while)</h2>
+      <label>Inteiro ≥ 0</label>
+      <input id="e14n" type="number" step="1" min="0">
+      <button onclick="e14()">Calcular</button>
+      <div id="o14" class="out"></div>
+    </section>
+
+    <!-- 15 -->
+    <section class="card">
+      <h2>15) Média de idades até "fim" (while)</h2>
+      <div class="row">
+        <div><label>Nome (digite "fim" para encerrar)</label><input id="e15nome" type="text"></div>
+        <div><label>Idade</label><input id="e15idade" type="number" step="1"></div>
+      </div>
+      <div class="row">
+        <button onclick="e15Adicionar()">Adicionar</button>
+        <button onclick="e15Finalizar()">Finalizar</button>
+        <button onclick="e15Limpar()">Limpar</button>
+      </div>
+      <ul id="e15lista" class="tag"></ul>
+      <div id="o15" class="out"></div>
+      <div class="hint">Os registros são acumulados até você digitar "fim" no campo Nome e clicar em Adicionar.</div>
+    </section>
+  </main>
+
+  <footer style="max-width:1100px;margin:20px auto 0;color:var(--muted);font-size:12px;">
+    <p>Implementações usam exclusivamente <code>while</code> nos cálculos/iterações.</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
