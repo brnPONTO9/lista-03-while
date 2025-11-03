@@ -63,5 +63,5 @@ O design é limpo, moderno e responsivo — ideal para estudo ou demonstração 
 
 ## ✨ Autor
 
-Feito com 💻 e ☕ por **[Seu Nome Aqui]**  
+Feito com 💻 e ☕ por **[Bruno Lopes]**  
 Sinta-se à vontade para modificar, praticar e aprimorar suas habilidades!
